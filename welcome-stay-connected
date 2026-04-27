@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Refinery Aesthetics | Stay Connected</title>
+
+  <meta name="description" content="Thank you for connecting with Refinery Aesthetics. Join our list and be first to know when we open in Bancroft, WI." />
+  <meta property="og:title" content="Refinery Aesthetics | Stay Connected" />
+  <meta property="og:description" content="Elevated aesthetic treatments opening May 2026 in Bancroft, WI. Join the list." />
+  <meta property="og:type" content="website" />
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --dark:    #1a1a1a;
+      --gold:    #c8a96e;
+      --gold-lt: #e2cfa5;
+      --cream:   #f0ebe3;
+      --tan:     #e0d6c8;
+      --white:   #faf8f4;
+      --muted:   #7a7168;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    /* ── HIDE RECAPTCHA BADGE ───────────────────────────────────── */
+    .grecaptcha-badge { visibility: hidden !important; }
+
+    /* ── KAJABI FULL-BLEED FIX ───────────────────────────────────── */
+    html, body {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      overflow-x: hidden !important;
+    }
+
+    .page {
+      width: 100vw !important;
+      position: relative !important;
+      left: 50% !important;
+      margin-left: -50vw !important;
+    }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      background: var(--dark);
+      color: var(--white);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── ATMOSPHERIC BACKGROUND ──────────────────────────────────── */
+    .bg-layer {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background:
+        radial-gradient(ellipse 80% 55% at 50% -5%,  rgba(200,169,110,0.16) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 45% at 10% 110%, rgba(200,169,110,0.07) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 40% at 90% 110%, rgba(200,169,110,0.07) 0%, transparent 55%);
+    }
+
+    /* ── PAGE WRAPPER ────────────────────────────────────────────── */
+    .page {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 64px 32px 72px;
+    }
+
+    /* ── LOGO ────────────────────────────────────────────────────── */
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 52px;
+      text-decoration: none;
+    }
+
+    .logo-word {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .logo-rule {
+      width: 36px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.65;
+      margin: 6px 0;
+    }
+
+    .logo-sub {
+      font-family: 'Jost', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ── CARD ────────────────────────────────────────────────────── */
+    .card {
+      width: 100%;
+      max-width: 540px;
+      text-align: center;
+    }
+
+    /* Decorative top rule -->
+    .card-top-rule {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+    .card-top-rule::before,
+    .card-top-rule::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.4;
+    }
+    .card-top-label {
+      font-size: 9.5px;
+      font-weight: 500;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      opacity: 0.8;
+    }
+
+    /* ── HEADLINE ────────────────────────────────────────────────── */
+    .headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(46px, 8vw, 76px);
+      font-weight: 300;
+      line-height: 1.0;
+      letter-spacing: -0.01em;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    .headline em {
+      font-style: italic;
+      color: var(--gold-lt);
+    }
+
+    .subhead {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(20px, 3.5vw, 30px);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--gold);
+      margin-bottom: 32px;
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+    }
+
+    .rule {
+      width: 44px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.5;
+      margin: 0 auto 28px;
+    }
+
+    .body-copy {
+      font-size: clamp(15px, 1.8vw, 16.5px);
+      font-weight: 300;
+      line-height: 1.9;
+      color: rgba(250,248,244,0.78);
+      max-width: 420px;
+      margin: 0 auto 44px;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── FORM WRAPPER ────────────────────────────────────────────── */
+    #card-form {
+      max-width: 420px;
+      margin: 0 auto 8px;
+      text-align: left;
+    }
+
+    #card-form .kajabi-subscribe-form,
+    #card-form form {
+      background: transparent !important;
+      border: none !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+    }
+
+    #card-form .form-title,
+    #card-form h1, #card-form h2, #card-form h3,
+    #card-form label { display: none !important; }
+
+    #card-form input[type="text"],
+    #card-form input[type="email"],
+    #card-form input[type="tel"],
+    #card-form input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
+    #card-form textarea {
+      background: rgba(250,248,244,0.06) !important;
+      border: 1px solid rgba(200,169,110,0.35) !important;
+      border-radius: 0 !important;
+      padding: 14px 18px !important;
+      font-family: 'Jost', sans-serif !important;
+      font-size: 13.5px !important;
+      font-weight: 300 !important;
+      color: var(--white) !important;
+      outline: none !important;
+      width: 100% !important;
+      -webkit-appearance: none !important;
+      margin-bottom: 10px !important;
+      box-shadow: none !important;
+    }
+    #card-form input::placeholder,
+    #card-form textarea::placeholder { color: rgba(250,248,244,0.30) !important; }
+    #card-form input:focus,
+    #card-form select:focus,
+    #card-form textarea:focus {
+      border-color: rgba(200,169,110,0.7) !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    #card-form input[type="submit"],
+    #card-form button[type="submit"],
+    #card-form .kajabi-button,
+    #card-form [class*="submit"],
+    #card-form [class*="Subscribe"],
+    #card-form [class*="subscribe"] {
+      background: var(--gold) !important;
+      color: var(--dark) !important;
+      border: 1px solid var(--gold) !important;
+      border-radius: 0 !important;
+      padding: 15px 24px !important;
+      font-family: 'Jost', sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 500 !important;
+      letter-spacing: 0.18em !important;
+      text-transform: uppercase !important;
+      cursor: pointer !important;
+      width: 100% !important;
+      margin-top: 4px !important;
+      transition: background 0.25s !important;
+      -webkit-appearance: none !important;
+      box-shadow: none !important;
+    }
+    #card-form input[type="submit"]:hover,
+    #card-form button[type="submit"]:hover {
+      background: var(--gold-lt) !important;
+      border-color: var(--gold-lt) !important;
+    }
+    #card-form .form-confirmation,
+    #card-form .confirmation-message,
+    #card-form [class*="success"],
+    #card-form [class*="confirm"] {
+      font-family: 'Jost', sans-serif !important;
+      font-size: 13px !important;
+      font-weight: 300 !important;
+      color: var(--gold) !important;
+      letter-spacing: 0.08em !important;
+      background: transparent !important;
+      border: none !important;
+      padding: 16px 0 !important;
+      text-align: center !important;
+    }
+
+    /* ── PROMISE LINE ────────────────────────────────────────────── */
+    .promise {
+      margin-top: 18px;
+      font-size: 10.5px;
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      color: rgba(250,248,244,0.38);
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    /* ── DETAILS STRIP ───────────────────────────────────────────── */
+    .details {
+      margin-top: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      flex-wrap: wrap;
+    }
+
+    .detail-item {
+      text-align: center;
+      padding: 0 36px;
+      position: relative;
+    }
+
+    .detail-item + .detail-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 32px;
+      background: rgba(200,169,110,0.2);
+    }
+
+    .detail-label {
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      opacity: 0.9;
+      margin-bottom: 6px;
+    }
+
+    .detail-value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px;
+      font-weight: 300;
+      color: rgba(250,248,244,0.72);
+      letter-spacing: 0.04em;
+    }
+
+    /* ── SOCIAL ──────────────────────────────────────────────────── */
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 48px;
+    }
+
+    .social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border: 1px solid rgba(200,169,110,0.22);
+      border-radius: 50%;
+      color: rgba(250,248,244,0.30);
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .social a:hover {
+      border-color: rgba(200,169,110,0.55);
+      color: var(--gold);
+    }
+
+    /* ── COPYRIGHT ───────────────────────────────────────────────── */
+    .copyright {
+      margin-top: 28px;
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 0.16em;
+      color: rgba(250,248,244,0.30);
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    /* ── ANIMATIONS ──────────────────────────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo       { animation: fadeUp 0.8s ease 0.1s  both; }
+    .card-top-rule { animation: fadeUp 0.7s ease 0.2s  both; }
+    .headline   { animation: fadeUp 0.9s ease 0.3s  both; }
+    .subhead    { animation: fadeUp 0.9s ease 0.4s  both; }
+    .rule       { animation: fadeUp 0.7s ease 0.48s both; }
+    .body-copy  { animation: fadeUp 0.8s ease 0.55s both; }
+    #card-form  { animation: fadeUp 0.8s ease 0.65s both; }
+    .promise    { animation: fadeUp 0.7s ease 0.75s both; }
+    .details    { animation: fadeUp 0.7s ease 0.82s both; }
+    .social     { animation: fadeUp 0.7s ease 0.9s  both; }
+    .copyright  { animation: fadeUp 0.6s ease 0.95s both; }
+
+    @media (max-width: 500px) {
+      .page { padding: 48px 24px 60px; }
+      .detail-item { padding: 12px 20px; }
+      .detail-item + .detail-item::before { display: none; }
+      .details { flex-direction: column; gap: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-layer"></div>
+
+  <div class="page">
+
+    <!-- Logo -->
+    <a href="https://www.refineryaestheticswi.com" class="logo">
+      <span class="logo-word">Refinery</span>
+      <div class="logo-rule"></div>
+      <span class="logo-sub">Aesthetics</span>
+    </a>
+
+    <div class="card">
+
+      <!-- Eyebrow -->
+      <div class="card-top-rule">
+        <span class="card-top-label">A personal introduction</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="headline">Let's stay<br><em>connected.</em></h1>
+      <p class="subhead">Opening May 2026 in Bancroft, WI</p>
+      <div class="rule"></div>
+
+      <p class="body-copy">Drop your info below and you'll be among the first to know when we open and first to book. No pressure, just a spot on the list.</p>
+
+      <!--
+        KAJABI: Create a new form in Kajabi, set automation to apply tag "digital-card",
+        then paste the embed script inside this div.
+      -->
+      <div id="card-form">
+        <script src="https://www.refineryaestheticswi.com/forms/2149550027/embed.js"></script>
+      </div>
+
+      <p class="promise">No spam &nbsp;·&nbsp; Unsubscribe anytime &nbsp;·&nbsp; Protected by reCAPTCHA</p>
+
+    </div>
+
+    <!-- Details strip -->
+    <div class="details">
+      <div class="detail-item">
+        <p class="detail-label">Location</p>
+        <p class="detail-value">Bancroft, WI</p>
+      </div>
+      <div class="detail-item">
+        <p class="detail-label">Opening</p>
+        <p class="detail-value">May 2026</p>
+      </div>
+      <div class="detail-item">
+        <p class="detail-label">Services</p>
+        <p class="detail-value">Botox &amp; Lip Filler</p>
+      </div>
+    </div>
+
+    <!-- Social -->
+    <div class="social">
+      <a href="https://www.instagram.com/refineryaestheticswi" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <a href="https://www.facebook.com/RefineryAestheticsWI" aria-label="Facebook" target="_blank" rel="noopener">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+        </svg>
+      </a>
+      <a href="#" aria-label="TikTok">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/>
+        </svg>
+      </a>
+    </div>
+
+    <p class="copyright">© 2026 Refinery Aesthetics &nbsp;·&nbsp; All rights reserved</p>
+
+  </div>
+
+  <!-- Strip Kajabi white wrapper — divs only, inputs untouched -->
+  <script>
+    function stripKajabiWrapper() {
+      var form = document.getElementById('card-form');
+      if (!form) return;
+      form.querySelectorAll('div').forEach(function(el) {
+        el.style.setProperty('background', 'transparent', 'important');
+        el.style.setProperty('background-color', 'transparent', 'important');
+        el.style.setProperty('box-shadow', 'none', 'important');
+        el.style.setProperty('border-radius', '0', 'important');
+        el.style.setProperty('border', 'none', 'important');
+        el.style.setProperty('padding', '0', 'important');
+      });
+    }
+    setTimeout(stripKajabiWrapper, 500);
+    setTimeout(stripKajabiWrapper, 1200);
+    setTimeout(stripKajabiWrapper, 2500);
+    var formEl = document.getElementById('card-form');
+    if (formEl && window.MutationObserver) {
+      new MutationObserver(stripKajabiWrapper).observe(formEl, { childList: true, subtree: true });
+    }
+  </script>
+
+  <!-- Iframe height sender -->
+  <script>
+    function sendHeight() {
+      var h = document.documentElement.scrollHeight;
+      window.parent.postMessage({ type: 'resize', id: 'refinery-card', height: h }, '*');
+    }
+    if (window.ResizeObserver) {
+      new ResizeObserver(sendHeight).observe(document.body);
+    }
+    window.addEventListener('load', sendHeight);
+    window.addEventListener('resize', sendHeight);
+    sendHeight();
+  </script>
+
+</body>
+</html>
