@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You're Invited | A Refinery Botox Party</title>
+
+  <meta name="description" content="You've been invited to a private Botox party hosted by Refinery Aesthetics. RSVP to save your spot." />
+  <meta property="og:title" content="You're Invited | A Refinery Botox Party" />
+  <meta property="og:description" content="A private, luxury in-home Botox experience. You've been personally invited. RSVP to save your spot." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --dark:    #1a1a1a;
+      --gold:    #c8a96e;
+      --gold-lt: #e2cfa5;
+      --cream:   #f0ebe3;
+      --tan:     #e0d6c8;
+      --white:   #faf8f4;
+      --muted:   #7a7168;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    html, body {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      overflow-x: hidden !important;
+    }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      background: var(--dark);
+      color: var(--white);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+
+    /* ── BACKGROUND ──────────────────────────────────────────────── */
+    .bg-layer {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background:
+        radial-gradient(ellipse 80% 55% at 50% -5%,  rgba(200,169,110,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 45% at 10% 110%, rgba(200,169,110,0.08) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 40% at 90% 110%, rgba(200,169,110,0.08) 0%, transparent 55%);
+    }
+
+    /* ── PAGE ────────────────────────────────────────────────────── */
+    .page {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 64px 32px 72px;
+      width: 100vw !important;
+      left: 50% !important;
+      margin-left: -50vw !important;
+    }
+
+    /* ── INVITATION CARD ─────────────────────────────────────────── */
+    .invite-card {
+      width: 100%;
+      max-width: 520px;
+      border: 1px solid rgba(200,169,110,0.25);
+      padding: 56px 52px;
+      text-align: center;
+      position: relative;
+      background: rgba(250,248,244,0.02);
+    }
+
+    /* Corner accents */
+    .invite-card::before,
+    .invite-card::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+    }
+    .invite-card::before {
+      top: -1px;
+      left: -1px;
+      border-top: 2px solid var(--gold);
+      border-left: 2px solid var(--gold);
+    }
+    .invite-card::after {
+      bottom: -1px;
+      right: -1px;
+      border-bottom: 2px solid var(--gold);
+      border-right: 2px solid var(--gold);
+    }
+
+    .corner-tr {
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      width: 20px;
+      height: 20px;
+      border-top: 2px solid var(--gold);
+      border-right: 2px solid var(--gold);
+    }
+    .corner-bl {
+      position: absolute;
+      bottom: -1px;
+      left: -1px;
+      width: 20px;
+      height: 20px;
+      border-bottom: 2px solid var(--gold);
+      border-left: 2px solid var(--gold);
+    }
+
+    /* ── LOGO ────────────────────────────────────────────────────── */
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 40px;
+      text-decoration: none;
+    }
+    .logo-word {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--white);
+      line-height: 1;
+    }
+    .logo-rule {
+      width: 28px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.65;
+      margin: 5px 0;
+    }
+    .logo-sub {
+      font-family: 'Jost', sans-serif;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ── INVITE CONTENT ──────────────────────────────────────────── */
+    .invite-eyebrow {
+      font-size: 9.5px;
+      font-weight: 500;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .invite-rule-top {
+      width: 36px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.4;
+      margin: 0 auto 24px;
+    }
+
+    .invite-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(36px, 6vw, 52px);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--white);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    .invite-headline em {
+      font-style: italic;
+      color: var(--gold-lt);
+    }
+
+    .invite-sub {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(16px, 2.5vw, 22px);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--gold);
+      margin-bottom: 28px;
+      letter-spacing: 0.02em;
+    }
+
+    .invite-rule {
+      width: 36px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.4;
+      margin: 0 auto 28px;
+    }
+
+    .invite-body {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.9;
+      color: rgba(250,248,244,0.68);
+      margin-bottom: 32px;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── EVENT DETAILS ───────────────────────────────────────────── */
+    .event-details {
+      border-top: 1px solid rgba(200,169,110,0.15);
+      border-bottom: 1px solid rgba(200,169,110,0.15);
+      padding: 24px 0;
+      margin-bottom: 36px;
+    }
+
+    .event-detail-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .event-detail-row:last-child { margin-bottom: 0; }
+
+    .detail-key {
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      min-width: 60px;
+      text-align: right;
+    }
+
+    .detail-val {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px;
+      font-weight: 300;
+      color: rgba(250,248,244,0.82);
+      letter-spacing: 0.03em;
+      text-align: left;
+    }
+
+    /* ── RSVP FORM ───────────────────────────────────────────────── */
+    .rsvp-label {
+      font-size: 9.5px;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+      display: block;
+    }
+
+    #rsvp-form {
+      max-width: 100%;
+      text-align: left;
+    }
+
+    #rsvp-form .kajabi-subscribe-form,
+    #rsvp-form form {
+      background: transparent !important;
+      border: none !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+    }
+    #rsvp-form .form-title,
+    #rsvp-form h1, #rsvp-form h2, #rsvp-form h3,
+    #rsvp-form label { display: none !important; }
+
+    #rsvp-form input[type="text"],
+    #rsvp-form input[type="email"],
+    #rsvp-form input[type="tel"],
+    #rsvp-form input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
+    #rsvp-form textarea {
+      background: rgba(250,248,244,0.05) !important;
+      border: 1px solid rgba(200,169,110,0.28) !important;
+      border-radius: 0 !important;
+      padding: 14px 18px !important;
+      font-family: 'Jost', sans-serif !important;
+      font-size: 13px !important;
+      font-weight: 300 !important;
+      color: var(--white) !important;
+      outline: none !important;
+      width: 100% !important;
+      -webkit-appearance: none !important;
+      margin-bottom: 10px !important;
+      box-shadow: none !important;
+    }
+    #rsvp-form input::placeholder,
+    #rsvp-form textarea::placeholder { color: rgba(250,248,244,0.25) !important; }
+    #rsvp-form input:focus,
+    #rsvp-form textarea:focus {
+      border-color: rgba(200,169,110,0.65) !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    #rsvp-form input[type="submit"],
+    #rsvp-form button[type="submit"],
+    #rsvp-form .kajabi-button,
+    #rsvp-form [class*="submit"],
+    #rsvp-form [class*="Subscribe"],
+    #rsvp-form [class*="subscribe"] {
+      background: var(--gold) !important;
+      color: var(--dark) !important;
+      border: 1px solid var(--gold) !important;
+      border-radius: 0 !important;
+      padding: 15px 24px !important;
+      font-family: 'Jost', sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 500 !important;
+      letter-spacing: 0.22em !important;
+      text-transform: uppercase !important;
+      cursor: pointer !important;
+      width: 100% !important;
+      margin-top: 4px !important;
+      transition: background 0.25s !important;
+      -webkit-appearance: none !important;
+      box-shadow: none !important;
+    }
+    #rsvp-form input[type="submit"]:hover,
+    #rsvp-form button[type="submit"]:hover {
+      background: var(--gold-lt) !important;
+      border-color: var(--gold-lt) !important;
+    }
+    #rsvp-form .form-confirmation,
+    #rsvp-form .confirmation-message,
+    #rsvp-form [class*="success"],
+    #rsvp-form [class*="confirm"] {
+      font-family: 'Jost', sans-serif !important;
+      font-size: 13px !important;
+      font-weight: 300 !important;
+      color: var(--gold) !important;
+      letter-spacing: 0.08em !important;
+      background: transparent !important;
+      border: none !important;
+      padding: 16px 0 !important;
+      text-align: center !important;
+    }
+
+    .grecaptcha-badge { visibility: hidden !important; }
+
+    .promise {
+      margin-top: 14px;
+      font-size: 10px;
+      font-weight: 300;
+      letter-spacing: 0.12em;
+      color: rgba(250,248,244,0.25);
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    /* ── REFINERY FOOTER ─────────────────────────────────────────── */
+    .refinery-credit {
+      margin-top: 36px;
+      text-align: center;
+    }
+    .refinery-credit p {
+      font-size: 10px;
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      color: rgba(250,248,244,0.22);
+      text-transform: uppercase;
+    }
+    .refinery-credit a {
+      color: var(--gold);
+      text-decoration: none;
+      opacity: 0.7;
+    }
+
+    /* ── ANIMATIONS ──────────────────────────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .invite-card { animation: fadeUp 0.9s ease 0.1s both; }
+    .refinery-credit { animation: fadeUp 0.6s ease 0.5s both; }
+
+    @media (max-width: 500px) {
+      .invite-card { padding: 40px 28px; }
+      .event-detail-row { flex-direction: column; align-items: center; gap: 3px; }
+      .detail-key { text-align: center; min-width: unset; }
+      .detail-val { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-layer"></div>
+
+  <div class="page">
+
+    <div class="invite-card">
+      <div class="corner-tr"></div>
+      <div class="corner-bl"></div>
+
+      <!-- Logo -->
+      <a href="https://www.refineryaestheticswi.com" class="logo">
+        <span class="logo-word">Refinery</span>
+        <div class="logo-rule"></div>
+        <span class="logo-sub">Aesthetics</span>
+      </a>
+
+      <p class="invite-eyebrow">You are cordially invited</p>
+      <div class="invite-rule-top"></div>
+
+      <h1 class="invite-headline">An <em>evening</em><br>of refinement</h1>
+      <p class="invite-sub">A private Botox party hosted in your honor</p>
+      <div class="invite-rule"></div>
+
+      <p class="invite-body">You have been personally invited to a private, luxury Botox experience hosted by your friend. Refinery Aesthetics comes to you — expert injectors, personalized consultations, and an evening designed to feel as good as the results.</p>
+
+      <!-- Event details — host fills these in or they stay as placeholders -->
+      <div class="event-details">
+        <div class="event-detail-row">
+          <span class="detail-key">Hosted by</span>
+          <span class="detail-val">Your Host's Name</span>
+        </div>
+        <div class="event-detail-row">
+          <span class="detail-key">Date</span>
+          <span class="detail-val">To be confirmed</span>
+        </div>
+        <div class="event-detail-row">
+          <span class="detail-key">Location</span>
+          <span class="detail-val">Details shared upon RSVP</span>
+        </div>
+        <div class="event-detail-row">
+          <span class="detail-key">Dress</span>
+          <span class="detail-val">Comfortable and chic</span>
+        </div>
+      </div>
+
+      <!-- RSVP -->
+      <span class="rsvp-label">Reserve your spot</span>
+
+      <!--
+        KAJABI: Create a new form "Botox Party RSVP" with fields:
+        First name, Last name, Email, Phone.
+        Set automation to apply tag: botox-party-rsvp
+        Paste embed script below.
+      -->
+      <div id="rsvp-form">
+        <!-- PASTE RSVP FORM EMBED SCRIPT HERE -->
+        <!-- <script src="https://www.refineryaestheticswi.com/forms/XXXXXXXXXX/embed.js"></script> -->
+      </div>
+
+      <p class="promise">Your information is kept private &nbsp;·&nbsp; Protected by reCAPTCHA</p>
+
+    </div>
+
+    <div class="refinery-credit">
+      <p>A <a href="https://www.refineryaestheticswi.com">Refinery Aesthetics</a> experience &nbsp;·&nbsp; Central and Northern Wisconsin</p>
+    </div>
+
+  </div>
+
+  <!-- Strip Kajabi white wrapper -->
+  <script>
+    function stripKajabiWrapper() {
+      var form = document.getElementById('rsvp-form');
+      if (!form) return;
+      form.querySelectorAll('div').forEach(function(el) {
+        el.style.setProperty('background', 'transparent', 'important');
+        el.style.setProperty('background-color', 'transparent', 'important');
+        el.style.setProperty('box-shadow', 'none', 'important');
+        el.style.setProperty('border-radius', '0', 'important');
+        el.style.setProperty('border', 'none', 'important');
+        el.style.setProperty('padding', '0', 'important');
+      });
+    }
+    setTimeout(stripKajabiWrapper, 500);
+    setTimeout(stripKajabiWrapper, 1200);
+    setTimeout(stripKajabiWrapper, 2500);
+    var formEl = document.getElementById('rsvp-form');
+    if (formEl && window.MutationObserver) {
+      new MutationObserver(stripKajabiWrapper).observe(formEl, { childList: true, subtree: true });
+    }
+  </script>
+
+  <script>
+    function sendHeight() {
+      var h = document.documentElement.scrollHeight;
+      window.parent.postMessage({ type: 'resize', id: 'refinery-invite', height: h }, '*');
+    }
+    if (window.ResizeObserver) new ResizeObserver(sendHeight).observe(document.body);
+    window.addEventListener('load', sendHeight);
+    window.addEventListener('resize', sendHeight);
+    sendHeight();
+  </script>
+
+</body>
+</html>
