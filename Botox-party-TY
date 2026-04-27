@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | Refinery Aesthetics</title>
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --dark:    #1a1a1a;
+      --gold:    #c8a96e;
+      --gold-lt: #e2cfa5;
+      --cream:   #f0ebe3;
+      --tan:     #e0d6c8;
+      --white:   #faf8f4;
+      --muted:   #7a7168;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      overflow-x: hidden !important;
+    }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      background: var(--dark);
+      color: var(--white);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+
+    .bg-layer {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background:
+        radial-gradient(ellipse 80% 55% at 50% -5%,  rgba(200,169,110,0.16) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 45% at 10% 110%, rgba(200,169,110,0.07) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 40% at 90% 110%, rgba(200,169,110,0.07) 0%, transparent 55%);
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 64px 32px 72px;
+      text-align: center;
+      width: 100vw !important;
+      left: 50% !important;
+      margin-left: -50vw !important;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 52px;
+      text-decoration: none;
+    }
+    .logo-word {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--white);
+      line-height: 1;
+    }
+    .logo-rule {
+      width: 36px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.65;
+      margin: 6px 0;
+    }
+    .logo-sub {
+      font-family: 'Jost', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* Check mark */
+    .check {
+      width: 56px;
+      height: 56px;
+      border: 1px solid rgba(200,169,110,0.5);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 36px;
+    }
+    .check svg { width: 20px; height: 20px; color: var(--gold); }
+
+    .eyebrow {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+    }
+    .eyebrow::before, .eyebrow::after {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.45;
+    }
+
+    .headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(42px, 7vw, 68px);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--white);
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+    .headline em { font-style: italic; color: var(--gold-lt); }
+
+    .subhead {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(18px, 3vw, 24px);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--gold);
+      margin-bottom: 32px;
+    }
+
+    .rule {
+      width: 44px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.45;
+      margin: 0 auto 28px;
+    }
+
+    .body-copy {
+      font-size: clamp(14px, 1.8vw, 15.5px);
+      font-weight: 300;
+      line-height: 1.9;
+      color: rgba(250,248,244,0.72);
+      max-width: 420px;
+      margin: 0 auto 44px;
+    }
+
+    /* Share box */
+    .share-box {
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto 48px;
+      border: 1px solid rgba(200,169,110,0.25);
+      padding: 36px 36px 32px;
+    }
+
+    .share-label {
+      font-size: 9.5px;
+      font-weight: 500;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .share-desc {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(250,248,244,0.5);
+      margin-bottom: 24px;
+    }
+
+    .share-url-wrap {
+      display: flex;
+      gap: 0;
+      margin-bottom: 20px;
+    }
+
+    .share-url {
+      flex: 1;
+      background: rgba(250,248,244,0.05);
+      border: 1px solid rgba(200,169,110,0.25);
+      border-right: none;
+      padding: 13px 16px;
+      font-family: 'Jost', sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      color: rgba(250,248,244,0.6);
+      letter-spacing: 0.02em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .copy-btn {
+      background: var(--gold);
+      color: var(--dark);
+      border: 1px solid var(--gold);
+      padding: 13px 22px;
+      font-family: 'Jost', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .copy-btn:hover { background: var(--gold-lt); border-color: var(--gold-lt); }
+    .copy-btn.copied { background: #5a8a6a; border-color: #5a8a6a; color: #fff; }
+
+    .share-divider {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .share-divider::before,
+    .share-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(200,169,110,0.15);
+    }
+    .share-divider span {
+      font-size: 9px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(250,248,244,0.25);
+    }
+
+    .share-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 20px;
+      border: 1px solid rgba(200,169,110,0.25);
+      font-family: 'Jost', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(250,248,244,0.55);
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+      cursor: pointer;
+      background: none;
+    }
+    .share-btn:hover { border-color: rgba(200,169,110,0.55); color: var(--gold); }
+
+    .what-next {
+      max-width: 400px;
+      margin: 0 auto 48px;
+      padding: 28px 32px;
+      border: 1px solid rgba(200,169,110,0.15);
+      text-align: left;
+    }
+
+    .what-next-label {
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .what-next p {
+      font-size: 13.5px;
+      font-weight: 300;
+      line-height: 1.85;
+      color: rgba(250,248,244,0.6);
+      margin-bottom: 10px;
+    }
+    .what-next p:last-child { margin-bottom: 0; }
+    .what-next p span {
+      color: var(--gold);
+      font-style: italic;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 15px;
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border: 1px solid rgba(200,169,110,0.22);
+      border-radius: 50%;
+      color: rgba(250,248,244,0.30);
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .social a:hover { border-color: rgba(200,169,110,0.55); color: var(--gold); }
+
+    .copyright {
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      color: rgba(250,248,244,0.2);
+      text-transform: uppercase;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .logo      { animation: fadeUp 0.8s ease 0.1s  both; }
+    .check     { animation: fadeUp 0.7s ease 0.2s  both; }
+    .eyebrow   { animation: fadeUp 0.7s ease 0.28s both; }
+    .headline  { animation: fadeUp 0.9s ease 0.35s both; }
+    .subhead   { animation: fadeUp 0.8s ease 0.42s both; }
+    .rule      { animation: fadeUp 0.6s ease 0.48s both; }
+    .body-copy { animation: fadeUp 0.8s ease 0.54s both; }
+    .share-box { animation: fadeUp 0.8s ease 0.62s both; }
+    .what-next { animation: fadeUp 0.7s ease 0.70s both; }
+    .social    { animation: fadeUp 0.6s ease 0.76s both; }
+
+    @media (max-width: 500px) {
+      .page { padding: 48px 24px 60px; }
+      .share-box { padding: 28px 22px 24px; }
+      .share-buttons { flex-direction: column; }
+      .share-btn { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-layer"></div>
+
+  <div class="page">
+
+    <a href="https://www.refineryaestheticswi.com" class="logo">
+      <span class="logo-word">Refinery</span>
+      <div class="logo-rule"></div>
+      <span class="logo-sub">Aesthetics</span>
+    </a>
+
+    <div class="check">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+    </div>
+
+    <p class="eyebrow">Inquiry Received</p>
+    <h1 class="headline">We'll be in touch<br><em>very soon.</em></h1>
+    <p class="subhead">Now invite your guests.</p>
+    <div class="rule"></div>
+
+    <p class="body-copy">Your inquiry is confirmed. While you wait to hear from us, share your personal invitation link with your friends so they can save their spot.</p>
+
+    <!-- SHARE BOX -->
+    <div class="share-box">
+      <span class="share-label">Your invitation link</span>
+      <p class="share-desc">Share this link with your guests. They'll land on a private invitation page where they can RSVP and you'll get an automatic headcount.</p>
+
+      <div class="share-url-wrap">
+        <div class="share-url" id="invite-url">https://www.refineryaestheticswi.com/youre-invited</div>
+        <button class="copy-btn" id="copy-btn" onclick="copyLink()">Copy</button>
+      </div>
+
+      <div class="share-divider"><span>or share via</span></div>
+
+      <div class="share-buttons">
+        <a class="share-btn" href="sms:?body=You're invited to a private Botox party. Claim your spot here: https://www.refineryaestheticswi.com/youre-invited" >
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Text
+        </a>
+        <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://www.refineryaestheticswi.com/youre-invited" target="_blank" rel="noopener">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          Facebook
+        </a>
+        <a class="share-btn" href="https://wa.me/?text=You're invited to a private Botox party hosted by Refinery Aesthetics. Claim your spot here: https://www.refineryaestheticswi.com/youre-invited" target="_blank" rel="noopener">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- WHAT HAPPENS NEXT -->
+    <div class="what-next">
+      <span class="what-next-label">What happens next</span>
+      <p><span>01</span> We review your inquiry and reach out within 48 hours to confirm your date and details.</p>
+      <p><span>02</span> Share the invitation link with your guests. Every RSVP is captured automatically.</p>
+      <p><span>03</span> We arrive. You host. Everyone leaves looking their best.</p>
+    </div>
+
+    <div class="social">
+      <a href="https://www.instagram.com/refineryaestheticswi" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <a href="https://www.facebook.com/RefineryAestheticsWI" aria-label="Facebook" target="_blank" rel="noopener">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+        </svg>
+      </a>
+    </div>
+
+    <p class="copyright">© 2026 Refinery Aesthetics &nbsp;·&nbsp; Bancroft, WI</p>
+
+  </div>
+
+  <script>
+    function copyLink() {
+      var url = document.getElementById('invite-url').textContent;
+      navigator.clipboard.writeText(url).then(function() {
+        var btn = document.getElementById('copy-btn');
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(function() {
+          btn.textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2500);
+      });
+    }
+
+    function sendHeight() {
+      var h = document.documentElement.scrollHeight;
+      window.parent.postMessage({ type: 'resize', id: 'refinery-party-thankyou', height: h }, '*');
+    }
+    if (window.ResizeObserver) new ResizeObserver(sendHeight).observe(document.body);
+    window.addEventListener('load', sendHeight);
+    window.addEventListener('resize', sendHeight);
+    sendHeight();
+  </script>
+
+</body>
+</html>
