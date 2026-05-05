@@ -249,6 +249,7 @@
     }
 
     .btn-book-service:hover { background: #333; }
+    .btn-book-service:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 
     /* Image side */
     .service-image {
@@ -358,6 +359,7 @@
     }
 
     .btn-gold:hover { background: var(--gold); color: var(--dark); }
+    .btn-gold:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 
     /* ── FOOTER ────────────────────────────────────────────────── */
     .footer-stripe {
@@ -404,213 +406,6 @@
     .footer-social svg {
       width: 14px;
       height: 14px;
-    }
-
-
-    /* ── COMING SOON OVERLAY ───────────────────────────────────── */
-    .cs-overlay {
-      position: fixed;
-      inset: 0;
-      z-index: 9999;
-      background: var(--dark);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-      text-align: center;
-      opacity: 1;
-      transition: opacity 0.6s ease;
-    }
-
-    .cs-overlay.hide {
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    .cs-overlay::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 70% 50% at 50% 0%, rgba(200,169,110,0.12) 0%, transparent 70%),
-        radial-gradient(ellipse 40% 40% at 80% 100%, rgba(200,169,110,0.06) 0%, transparent 60%);
-      pointer-events: none;
-    }
-
-    .cs-inner {
-      max-width: 520px;
-      width: 100%;
-      position: relative;
-    }
-
-    .cs-logo {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-      margin-bottom: 48px;
-    }
-
-    .cs-logo-word {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(28px, 4vw, 44px);
-      font-weight: 300;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--white);
-      line-height: 1;
-    }
-
-    .cs-logo-word.sub {
-      font-size: clamp(11px, 1.4vw, 14px);
-      font-weight: 400;
-      letter-spacing: 0.45em;
-      color: var(--gold);
-      font-family: 'Jost', sans-serif;
-      margin-top: 2px;
-    }
-
-    .cs-logo-rule {
-      width: 36px;
-      height: 1px;
-      background: var(--gold);
-      opacity: 0.5;
-      margin: 8px 0;
-    }
-
-    .cs-eyebrow {
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 16px;
-    }
-
-    .cs-heading {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(34px, 5vw, 54px);
-      font-weight: 300;
-      color: var(--white);
-      line-height: 1.1;
-      margin-bottom: 16px;
-    }
-
-    .cs-heading em {
-      font-style: italic;
-      color: var(--gold-lt);
-    }
-
-    .cs-rule {
-      width: 44px;
-      height: 1px;
-      background: var(--gold);
-      opacity: 0.4;
-      margin: 0 auto 24px;
-    }
-
-
-    .cs-opening {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(38px, 5.5vw, 64px);
-      font-weight: 300;
-      font-style: italic;
-      color: #c8a96e;
-      letter-spacing: 0.04em;
-      margin-bottom: 8px;
-      line-height: 1.2;
-    }
-
-    .cs-address {
-      font-size: 12px;
-      font-weight: 400;
-      letter-spacing: 0.18em;
-      color: rgba(200,169,110,0.65);
-      text-transform: uppercase;
-      margin-bottom: 28px;
-    }
-
-    .cs-sub {
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 1.8;
-      color: rgba(250,248,244,0.55);
-      margin-bottom: 40px;
-    }
-
-    .cs-form {
-      display: flex;
-      gap: 0;
-      max-width: 420px;
-      margin: 0 auto 20px;
-    }
-
-    .cs-input {
-      flex: 1;
-      background: rgba(250,248,244,0.06);
-      border: 1px solid rgba(200,169,110,0.3);
-      border-right: none;
-      padding: 14px 18px;
-      font-family: 'Jost', sans-serif;
-      font-size: 13.5px;
-      font-weight: 300;
-      color: var(--white);
-      outline: none;
-      transition: border-color 0.25s;
-      border-radius: 0;
-      -webkit-appearance: none;
-    }
-
-    .cs-input::placeholder { color: rgba(250,248,244,0.30); }
-    .cs-input:focus { border-color: rgba(200,169,110,0.7); }
-
-    .cs-btn {
-      background: var(--gold);
-      color: var(--dark);
-      border: 1px solid var(--gold);
-      padding: 14px 24px;
-      font-family: 'Jost', sans-serif;
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: background 0.25s;
-      border-radius: 0;
-    }
-
-    .cs-btn:hover { background: var(--gold-lt); }
-
-    .cs-success {
-      display: none;
-      font-size: 13px;
-      font-weight: 300;
-      color: var(--gold);
-      letter-spacing: 0.08em;
-      margin-bottom: 20px;
-    }
-
-    .cs-dismiss {
-      display: block;
-      font-size: 11px;
-      font-weight: 400;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: rgba(250,248,244,0.25);
-      cursor: pointer;
-      background: none;
-      border: none;
-      transition: color 0.2s;
-      margin: 0 auto;
-    }
-
-    .cs-dismiss:hover { color: rgba(250,248,244,0.55); }
-
-    @media (max-width: 480px) {
-      .cs-form { flex-direction: column; }
-      .cs-input { border-right: 1px solid rgba(200,169,110,0.3); border-bottom: none; }
-      .cs-btn { padding: 14px; }
     }
 
 
@@ -828,59 +623,44 @@
     @media (max-width: 480px) {
       .service-stats { grid-template-columns: 1fr; }
     }
+
+    /* ── REDUCED MOTION ────────────────────────────────────────── */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+      }
+    }
   </style>
 
 <!-- ═══ NAVIGATION ══════════════════════════════════════════════ -->
-  <nav class="site-nav">
-    <a href="https://www.refineryaestheticswi.com" class="nav-logo">
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="https://www.refineryaestheticswi.com" target="_top" class="nav-logo" aria-label="Refinery Aesthetics home">
       <span class="nav-logo-word">Refinery</span>
       <div class="nav-logo-rule"></div>
       <span class="nav-logo-sub">Aesthetics</span>
     </a>
     <ul class="nav-links">
-      <li><a href="https://www.refineryaestheticswi.com">Home</a></li>
-      <li><a href="https://www.refineryaestheticswi.com/services" class="active">Services</a></li>
-      <li><a href="https://www.refineryaestheticswi.com/our-team">Our Team</a></li>
-      <li><a href="https://www.refineryaestheticswi.com/contact">Contact</a></li>
+      <li><a href="https://www.refineryaestheticswi.com" target="_top">Home</a></li>
+      <li><a href="https://www.refineryaestheticswi.com/services" target="_top" class="active">Services</a></li>
+      <li><a href="https://www.refineryaestheticswi.com/our-team" target="_top">Our Team</a></li>
+      <li><a href="https://www.refineryaestheticswi.com/contact" target="_top">Contact</a></li>
     </ul>
-    <a href="#" onclick="var o=document.getElementById('cs-overlay');if(o){o.style.display='flex';o.classList.remove('hide');}return false;" class="nav-book">Book Now</a>
-    <button class="nav-burger" onclick="document.getElementById('nav-mobile').classList.add('open')">
+    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics" target="_top" class="nav-book">Book Now</a>
+    <button class="nav-burger" onclick="document.getElementById('nav-mobile').classList.add('open')" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
   <!-- Mobile Menu -->
   <div class="nav-mobile" id="nav-mobile">
-    <button class="nav-mobile-close" onclick="document.getElementById('nav-mobile').classList.remove('open')">&times;</button>
-    <a href="https://www.refineryaestheticswi.com">Home</a>
-    <a href="https://www.refineryaestheticswi.com/services" class="active">Services</a>
-    <a href="https://www.refineryaestheticswi.com/our-team">Our Team</a>
-    <a href="https://www.refineryaestheticswi.com/contact">Contact</a>
-    <a href="#" onclick="document.getElementById('nav-mobile').classList.remove('open');var o=document.getElementById('cs-overlay');if(o){o.style.display='flex';o.classList.remove('hide');}return false;" class="nav-book-mobile">Book Now</a>
+    <button class="nav-mobile-close" onclick="document.getElementById('nav-mobile').classList.remove('open')" aria-label="Close menu">&times;</button>
+    <a href="https://www.refineryaestheticswi.com" target="_top">Home</a>
+    <a href="https://www.refineryaestheticswi.com/services" target="_top" class="active">Services</a>
+    <a href="https://www.refineryaestheticswi.com/our-team" target="_top">Our Team</a>
+    <a href="https://www.refineryaestheticswi.com/contact" target="_top">Contact</a>
+    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics" target="_top" class="nav-book-mobile">Book Now</a>
   </div>
-
-
-  <!-- ═══ COMING SOON OVERLAY ══════════════════════════════════════ -->
-  <div class="cs-overlay" id="cs-overlay">
-    <div class="cs-inner">
-      <div class="cs-logo">
-        <span class="cs-logo-word">Refinery</span>
-        <div class="cs-logo-rule"></div>
-        <span class="cs-logo-word sub">Aesthetics</span>
-      </div>
-      <p class="cs-eyebrow">Bancroft, Wisconsin</p>
-      <h2 class="cs-heading">Something <em>refined</em><br>is coming to<br>Central Wisconsin</h2>
-      <div class="cs-rule"></div>
-      <p class="cs-sub">Opening Summer 2026 in 5496 County Rd. W Bancroft, WI 54921.<br>Join the waitlist and be the first to book.</p>
-      <div class="cs-form" id="cs-form">
-        <input type="email" class="cs-input" id="cs-email" placeholder="Your email address" />
-        <button class="cs-btn" onclick="csSubmit()">Notify Me</button>
-      </div>
-      <p class="cs-success" id="cs-success">&#10003; &nbsp; You are on the list. We will be in touch soon.</p>
-      <button class="cs-dismiss" onclick="csDismiss()">I will check back later &rarr;</button>
-    </div>
-  </div>
-
 
   <!-- ═══ PAGE HEADER ══════════════════════════════════════════════ -->
   <header class="page-header">
@@ -897,7 +677,7 @@
   <!-- ═══ 01 BOTOX ══════════════════════════════════════════════════ -->
   <div class="service-row">
     <div class="service-content">
-      <span class="service-bg-num">01</span>
+      <span class="service-bg-num" aria-hidden="true">01</span>
       <p class="service-num-label">01</p>
       <h2 class="service-title">Botox</h2>
       <p class="service-desc">Smooth fine lines and wrinkles with precision Botox treatments. Natural-looking results that refresh, never freeze.</p>
@@ -927,17 +707,17 @@
           <p class="stat-value">None</p>
         </div>
       </div>
-      <a href="#" onclick="var o=document.getElementById('cs-overlay');if(o){o.style.display='flex';o.classList.remove('hide');}return false;" class="btn-book-service">Book Botox</a>
+      <a href="https://www.refineryaestheticswi.com/refinery-aesthetics" target="_top" class="btn-book-service">Book Botox</a>
     </div>
     <div class="service-image">
-      <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2165439468/settings_images/2acacd7-6f55-af58-a0e-6dc6a04053_shutterstock_2512636133.jpg" alt="Botox" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;" />
+      <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2165439468/settings_images/2acacd7-6f55-af58-a0e-6dc6a04053_shutterstock_2512636133.jpg" alt="Botox treatment" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;" />
     </div>
   </div>
 
   <!-- ═══ 02 LIP FILLER ═════════════════════════════════════════════ -->
   <div class="service-row">
     <div class="service-content">
-      <span class="service-bg-num">02</span>
+      <span class="service-bg-num" aria-hidden="true">02</span>
       <p class="service-num-label">02</p>
       <h2 class="service-title">Lip <em>Filler</em></h2>
       <p class="service-desc">Restore volume, define your cupid's bow, and create a naturally beautiful pout tailored to your facial harmony.</p>
@@ -967,10 +747,10 @@
           <p class="stat-value">1 to 3 days</p>
         </div>
       </div>
-      <a href="#" onclick="var o=document.getElementById('cs-overlay');if(o){o.style.display='flex';o.classList.remove('hide');}return false;" class="btn-book-service">Book Lip Filler</a>
+      <a href="https://www.refineryaestheticswi.com/refinery-aesthetics" target="_top" class="btn-book-service">Book Lip Filler</a>
     </div>
     <div class="service-image">
-      <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2165439468/settings_images/c367146-525-0dd-ee1e-b5dc3700133_shutterstock_1243254472_1_.jpg" alt="Lip Filler" style="width:100%;height:100%;object-fit:cover;object-position:right center;display:block;" />
+      <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2165439468/settings_images/c367146-525-0dd-ee1e-b5dc3700133_shutterstock_1243254472_1_.jpg" alt="Lip filler treatment" style="width:100%;height:100%;object-fit:cover;object-position:right center;display:block;" />
     </div>
   </div>
 
@@ -979,7 +759,7 @@
   <section class="cta-strip">
     <h2>Not sure where to <em>start?</em></h2>
     <p>A consultation is always the first step. We will walk you through your options with no pressure and no rush.</p>
-    <a href="#" onclick="var o=document.getElementById('cs-overlay');if(o){o.style.display='flex';o.classList.remove('hide');}return false;" class="btn-gold">Book a Consultation</a>
+    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics" target="_top" class="btn-gold">Book a Consultation</a>
   </section>
 
   <!-- ═══ FOOTER STRIPE ════════════════════════════════════════════ -->
@@ -987,7 +767,7 @@
     <div style="display:flex;align-items:center;justify-content:center;gap:20px;margin-bottom:14px;">
       <!-- Instagram -->
       <a href="https://www.instagram.com/refineryaestheticswi" aria-label="Instagram" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border:1px solid rgba(200,169,110,0.25);border-radius:50%;color:rgba(250,248,244,0.40);text-decoration:none;flex-shrink:0;">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:block;width:13px;height:13px;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:block;width:13px;height:13px;" aria-hidden="true">
           <rect x="2" y="2" width="20" height="20" rx="5"/>
           <circle cx="12" cy="12" r="4"/>
           <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
@@ -995,13 +775,13 @@
       </a>
       <!-- Facebook -->
       <a href="https://www.facebook.com/RefineryAestheticsWI" aria-label="Facebook" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border:1px solid rgba(200,169,110,0.25);border-radius:50%;color:rgba(250,248,244,0.40);text-decoration:none;flex-shrink:0;">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:block;width:13px;height:13px;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:block;width:13px;height:13px;" aria-hidden="true">
           <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
         </svg>
       </a>
       <!-- TikTok -->
       <a href="#" aria-label="TikTok" style="display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border:1px solid rgba(200,169,110,0.25);border-radius:50%;color:rgba(250,248,244,0.40);text-decoration:none;flex-shrink:0;">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="none" style="display:block;width:13px;height:13px;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="none" style="display:block;width:13px;height:13px;" aria-hidden="true">
           <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/>
         </svg>
       </a>
@@ -1009,47 +789,17 @@
     <p><span style="color:rgba(250,248,244,0.80);text-transform:uppercase;letter-spacing:0.14em;">&copy; 2026 Refinery Aesthetics</span> <span style="color:rgba(200,169,110,0.6);">&nbsp;·&nbsp;</span> <span style="color:#c8a96e;font-weight:400;text-transform:none;letter-spacing:0.06em;">Bancroft, WI</span> <span style="color:rgba(200,169,110,0.6);">&nbsp;·&nbsp;</span> <span style="color:rgba(250,248,244,0.80);text-transform:uppercase;letter-spacing:0.14em;">All rights reserved</span></p>
   </div>
 
-
+  <!-- ═══ IFRAME HEIGHT SENDER (Kajabi) ════════════════════════════ -->
   <script>
-    // Coming soon overlay — show after 5 seconds
     (function() {
-      var dismissed = sessionStorage.getItem('cs-dismissed');
-      var el = document.getElementById('cs-overlay');
-      if (dismissed) {
-        if (el) el.style.display = 'none';
-      } else {
-        if (el) el.style.display = 'none';
-        setTimeout(function() {
-          if (el) {
-            el.style.display = 'flex';
-            el.style.opacity = '0';
-            el.classList.remove('hide');
-            setTimeout(function() {
-              el.style.transition = 'opacity 0.8s ease';
-              el.style.opacity = '1';
-            }, 30);
-          }
-        }, 5000);
+      function sendHeight() {
+        var h = document.body.scrollHeight;
+        window.parent.postMessage({ type: 'resize', height: h, id: 'refinery-services' }, '*');
+      }
+      window.addEventListener('load', sendHeight);
+      window.addEventListener('resize', sendHeight);
+      if (window.ResizeObserver) {
+        new ResizeObserver(sendHeight).observe(document.body);
       }
     })();
-
-    function csDismiss() {
-      var el = document.getElementById('cs-overlay');
-      if (el) {
-        el.classList.add('hide');
-        setTimeout(function() { el.style.display = 'none'; }, 600);
-      }
-      sessionStorage.setItem('cs-dismissed', '1');
-    }
-
-    function csSubmit() {
-      var email = document.getElementById('cs-email').value.trim();
-      if (!email || !email.includes('@')) {
-        alert('Please enter a valid email address.');
-        return;
-      }
-      document.getElementById('cs-form').style.display = 'none';
-      document.getElementById('cs-success').style.display = 'block';
-      setTimeout(function() { csDismiss(); }, 2500);
-    }
   </script>
