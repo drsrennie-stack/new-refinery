@@ -646,7 +646,7 @@
       <li><a href="https://www.refineryaestheticswi.com/our-team" target="_top">Our Team</a></li>
       <li><a href="https://www.refineryaestheticswi.com/contact" target="_top">Contact</a></li>
     </ul>
-    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics" target="_top" class="nav-book">Book Now</a>
+    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" target="_top" class="nav-book">Book Now</a>
     <button class="nav-burger" onclick="document.getElementById('nav-mobile').classList.add('open')" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -659,7 +659,7 @@
     <a href="https://www.refineryaestheticswi.com/services" target="_top" class="active">Services</a>
     <a href="https://www.refineryaestheticswi.com/our-team" target="_top">Our Team</a>
     <a href="https://www.refineryaestheticswi.com/contact" target="_top">Contact</a>
-    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics" target="_top" class="nav-book-mobile">Book Now</a>
+    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" target="_top" class="nav-book-mobile">Book Now</a>
   </div>
 
   <!-- ═══ PAGE HEADER ══════════════════════════════════════════════ -->
@@ -707,7 +707,7 @@
           <p class="stat-value">None</p>
         </div>
       </div>
-      <a href="https://www.refineryaestheticswi.com/refinery-aesthetics" target="_top" class="btn-book-service">Book Botox</a>
+      <a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" target="_top" class="btn-book-service">Book Botox</a>
     </div>
     <div class="service-image">
       <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2165439468/settings_images/2acacd7-6f55-af58-a0e-6dc6a04053_shutterstock_2512636133.jpg" alt="Botox treatment" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;" />
@@ -747,7 +747,7 @@
           <p class="stat-value">1 to 3 days</p>
         </div>
       </div>
-      <a href="https://www.refineryaestheticswi.com/refinery-aesthetics" target="_top" class="btn-book-service">Book Lip Filler</a>
+      <a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" target="_top" class="btn-book-service">Book Lip Filler</a>
     </div>
     <div class="service-image">
       <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2165439468/settings_images/c367146-525-0dd-ee1e-b5dc3700133_shutterstock_1243254472_1_.jpg" alt="Lip filler treatment" style="width:100%;height:100%;object-fit:cover;object-position:right center;display:block;" />
@@ -759,7 +759,7 @@
   <section class="cta-strip">
     <h2>Not sure where to <em>start?</em></h2>
     <p>A consultation is always the first step. We will walk you through your options with no pressure and no rush.</p>
-    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics" target="_top" class="btn-gold">Book a Consultation</a>
+    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" target="_top" class="btn-gold">Book a Consultation</a>
   </section>
 
   <!-- ═══ FOOTER STRIPE ════════════════════════════════════════════ -->
