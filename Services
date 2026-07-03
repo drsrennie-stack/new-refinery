@@ -646,7 +646,7 @@
       <li><a href="https://www.refineryaestheticswi.com/our-team" target="_top">Our Team</a></li>
       <li><a href="https://www.refineryaestheticswi.com/contact" target="_top">Contact</a></li>
     </ul>
-    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" target="_top" class="nav-book">Book Now</a>
+    <a href="https://refineryaestheticsllc.janeapp.com/" class="nav-book" target="_blank" rel="noopener">Book Now</a>
     <button class="nav-burger" onclick="document.getElementById('nav-mobile').classList.add('open')" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -659,7 +659,7 @@
     <a href="https://www.refineryaestheticswi.com/services" target="_top" class="active">Services</a>
     <a href="https://www.refineryaestheticswi.com/our-team" target="_top">Our Team</a>
     <a href="https://www.refineryaestheticswi.com/contact" target="_top">Contact</a>
-    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" target="_top" class="nav-book-mobile">Book Now</a>
+    <a href="https://refineryaestheticsllc.janeapp.com/" class="nav-book-mobile" target="_blank" rel="noopener">Book Now</a>
   </div>
 
   <!-- ═══ PAGE HEADER ══════════════════════════════════════════════ -->
