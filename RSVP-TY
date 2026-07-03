@@ -297,7 +297,7 @@
 
   <div class="page">
 
-    <a href="https://www.refineryaestheticswi.com" class="logo">
+    <a href="https://www.refineryaestheticswi.com" class="logo" target="_top">
       <span class="logo-word">Refinery</span>
       <div class="logo-rule"></div>
       <span class="logo-sub">Aesthetics</span>
@@ -332,7 +332,7 @@
       </div>
     </div>
 
-    <a href="https://www.refineryaestheticswi.com" class="btn-outline">Explore Refinery Aesthetics</a>
+    <a href="https://www.refineryaestheticswi.com" class="btn-outline" target="_top">Explore Refinery Aesthetics</a>
 
     <div class="social">
       <a href="https://www.instagram.com/refineryaestheticswi" aria-label="Instagram" target="_blank" rel="noopener">

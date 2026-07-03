@@ -619,18 +619,18 @@
 
 <!-- NAVIGATION -->
   <nav class="site-nav">
-    <a href="https://www.refineryaestheticswi.com" class="nav-logo">
+    <a href="https://www.refineryaestheticswi.com" class="nav-logo" target="_top">
       <span class="nav-logo-word">Refinery</span>
       <div class="nav-logo-rule"></div>
       <span class="nav-logo-sub">Aesthetics</span>
     </a>
     <ul class="nav-links">
-      <li><a href="https://www.refineryaestheticswi.com">Home</a></li>
-      <li><a href="https://www.refineryaestheticswi.com/services">Services</a></li>
-      <li><a href="https://www.refineryaestheticswi.com/our-team" class="active">Our Team</a></li>
-      <li><a href="https://www.refineryaestheticswi.com/contact">Contact</a></li>
+      <li><a href="https://www.refineryaestheticswi.com" target="_top">Home</a></li>
+      <li><a href="https://www.refineryaestheticswi.com/services" target="_top">Services</a></li>
+      <li><a href="https://www.refineryaestheticswi.com/our-team" class="active" target="_top">Our Team</a></li>
+      <li><a href="https://www.refineryaestheticswi.com/contact" target="_top">Contact</a></li>
     </ul>
-    <a href="https://sharilyn-rennie-f8ce.mykajabi.com/welcome-stay-connected" class="nav-book">Join the Waitlist</a>
+    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" class="nav-book" target="_top">Book Now</a>
     <button class="nav-burger" onclick="document.getElementById('nav-mobile').classList.add('open')">
       <span></span><span></span><span></span>
     </button>
@@ -639,11 +639,11 @@
   <!-- Mobile Menu -->
   <div class="nav-mobile" id="nav-mobile">
     <button class="nav-mobile-close" onclick="document.getElementById('nav-mobile').classList.remove('open')">&times;</button>
-    <a href="https://www.refineryaestheticswi.com">Home</a>
-    <a href="https://www.refineryaestheticswi.com/services">Services</a>
-    <a href="https://www.refineryaestheticswi.com/our-team" class="active">Our Team</a>
-    <a href="https://www.refineryaestheticswi.com/contact">Contact</a>
-    <a href="https://sharilyn-rennie-f8ce.mykajabi.com/welcome-stay-connected" class="nav-book-mobile">Join the Waitlist</a>
+    <a href="https://www.refineryaestheticswi.com" target="_top">Home</a>
+    <a href="https://www.refineryaestheticswi.com/services" target="_top">Services</a>
+    <a href="https://www.refineryaestheticswi.com/our-team" class="active" target="_top">Our Team</a>
+    <a href="https://www.refineryaestheticswi.com/contact" target="_top">Contact</a>
+    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" class="nav-book-mobile" target="_top">Book Now</a>
   </div>
 
 
@@ -767,7 +767,7 @@
   <section class="cta-strip">
     <h2>Ready to meet us <em>in person?</em></h2>
     <p>We'd love to learn about your goals and walk you through what's possible.</p>
-    <a href="https://sharilyn-rennie-f8ce.mykajabi.com/welcome-stay-connected" class="btn-gold">Join the Waitlist</a>
+    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" class="btn-gold" target="_top">Book Your Appointment</a>
   </section>
 
   <!-- FOOTER STRIPE -->

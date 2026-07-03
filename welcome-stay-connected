@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Refinery Aesthetics | Stay Connected</title>
 
-  <meta name="description" content="Thank you for connecting with Refinery Aesthetics. Join our list and be first to know when we open in Bancroft, WI." />
+  <meta name="description" content="Refinery Aesthetics is now open in Bancroft, WI. Book your appointment today." />
   <meta property="og:title" content="Refinery Aesthetics | Stay Connected" />
-  <meta property="og:description" content="Elevated aesthetic treatments opening May 2026 in Bancroft, WI. Join the list." />
+  <meta property="og:description" content="Elevated aesthetic treatments, now open in Bancroft, WI. Book your visit today." />
   <meta property="og:type" content="website" />
   <meta name="robots" content="noindex" />
 
@@ -412,7 +412,7 @@
   <div class="page">
 
     <!-- Logo -->
-    <a href="https://www.refineryaestheticswi.com" class="logo">
+    <a href="https://www.refineryaestheticswi.com" class="logo" target="_top">
       <span class="logo-word">Refinery</span>
       <div class="logo-rule"></div>
       <span class="logo-sub">Aesthetics</span>
@@ -427,15 +427,17 @@
 
       <!-- Headline -->
       <h1 class="headline">Let's stay<br><em>connected.</em></h1>
-      <p class="subhead">Opening May 2026 in Bancroft, WI</p>
+      <p class="subhead">Now open in Bancroft, WI</p>
       <div class="rule"></div>
 
-      <p class="body-copy">Drop your info below and you'll be among the first to know when we open and first to book. No pressure, just a spot on the list.</p>
+      <p class="body-copy">Booking is open. Appointments begin July 26 and are filling quickly, so book your visit now, or drop your info below to stay in the loop.</p>
 
       <!--
         KAJABI: Create a new form in Kajabi, set automation to apply tag "digital-card",
         then paste the embed script inside this div.
       -->
+      <p style="margin:0 0 26px;"><a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" target="_top" style="display:inline-block;background:#c8a96e;color:#1a1a1a;padding:13px 34px;font-size:10px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;text-decoration:none;">Book Your Appointment</a></p>
+
       <div id="card-form">
         <script src="https://www.refineryaestheticswi.com/forms/2149550027/embed.js"></script>
       </div>
@@ -451,8 +453,8 @@
         <p class="detail-value">Bancroft, WI</p>
       </div>
       <div class="detail-item">
-        <p class="detail-label">Opening</p>
-        <p class="detail-value">May 2026</p>
+        <p class="detail-label">Status</p>
+        <p class="detail-value">Now Open</p>
       </div>
       <div class="detail-item">
         <p class="detail-label">Services</p>

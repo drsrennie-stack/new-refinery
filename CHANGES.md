@@ -7,6 +7,9 @@ Every Book button on the home page pointed to /booking, which is the old waitlis
 ## EMR URL swap (DONE, July 3, 2026)
 The booking embed now points to Jane: https://refineryaestheticsllc.janeapp.com/. GlossGenius is fully removed from page content. The updated embed is saved under two names: refinery-booking-jane-kajabi.html (use this going forward) and refinery-booking-glossgenius-kajabi.html (same content, kept so nothing referencing the old filename breaks; delete when convenient). Paste the updated embed into the /refinery-aesthetics-booking Kajabi page to go live.
 
+## July 26 urgency copy (added July 3)
+Nine pages now carry the line "Appointments begin July 26 and are filling quickly, book now" (phrasing varies slightly by page): home, contact-refinery, join-the-waitlist, thank-you-booking, welcome-stay-connected, contact-thank-you, fouders-offer, founders-lockedin-ty, and the Jane booking embed. On the booking embed, the "Same-week appointments available" chip now reads "Appointments begin July 26" since same-week was not accurate before opening day. After July 26, this copy should be rolled back to evergreen wording.
+
 ## Per-file changes
 - home: 4 booking links repointed. Fixed an em dash in the hero.
 - our-team: 3 "Join the Waitlist" buttons (nav, mobile nav, CTA strip) replaced with Book buttons. They also pointed at the old mykajabi.com domain.

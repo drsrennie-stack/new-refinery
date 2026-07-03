@@ -6,14 +6,14 @@
   <title>Founder Special | Refinery Aesthetics</title>
 
   <!-- ── OG / SOCIAL META ───────────────────────────────────────── -->
-  <meta name="description" content="Lock in your Botox rate and hold it for a full year. The Refinery Aesthetics Founder Special is free to claim — no payment required. First 10 to complete their appointment win." />
+  <meta name="description" content="Lock in your Botox rate and hold it for a full year. The Refinery Aesthetics Founder Special is free to claim, no payment required. First 10 to complete their appointment win." />
   <meta property="og:title" content="Founder Special | Refinery Aesthetics" />
   <meta property="og:description" content="Lock in your Botox rate for a full year. Free to claim. First 10 to complete their appointment win the founding rate." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.refineryaestheticswi.com/founder-special" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Founder Special | Refinery Aesthetics" />
-  <meta name="twitter:description" content="Lock in your Botox rate for a full year. Free to claim — no payment required." />
+  <meta name="twitter:description" content="Lock in your Botox rate for a full year. Free to claim, no payment required." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -590,7 +590,7 @@
 
   <!-- NAV -->
   <nav class="site-nav">
-    <a href="https://www.refineryaestheticswi.com" class="nav-logo">
+    <a href="https://www.refineryaestheticswi.com" class="nav-logo" target="_top">
       <span class="nav-logo-word">Refinery</span>
       <div class="nav-logo-rule"></div>
       <span class="nav-logo-sub">Aesthetics</span>
@@ -600,7 +600,7 @@
 
   <!-- URGENCY BAR -->
   <div class="urgency-bar" style="margin-top:68px;">
-    <p><strong>Offer closes the day we open our doors.</strong></p>
+    <p><strong>We are open. The offer ends when the first 10 spots are claimed.</strong></p>
   </div>
 
   <!-- HERO -->
@@ -612,10 +612,11 @@
       <h1>Lock in your<br><em>rate.</em></h1>
       <p class="hero-h2">Hold it for a full year.</p>
       <div class="hero-rule"></div>
-      <p class="hero-sub">Grab your offer now. It's free, no payment required. When we open, the first 10 people to schedule and complete their appointment win the founding rate for a full year.</p>
+      <p class="hero-sub">Grab your offer now. It's free, no payment required. We are open, and the first 10 people to schedule and complete their appointment win the founding rate for a full year.</p>
       <div class="hero-cta-wrap">
         <a href="#claim" class="btn-primary">Grab the Founder Special →</a>
         <p class="hero-note">Free to grab · No payment required</p>
+        <p class="hero-note" style="margin-top:10px;"><a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" target="_top" style="color:#c8a96e;">Already claimed it? Book your appointment now</a></p>
       </div>
     </div>
   </section>
@@ -637,7 +638,7 @@
         <p class="step-num">02</p>
         <div class="step-icon"></div>
         <h3 class="step-title">Schedule your appointment</h3>
-        <p class="step-desc">When we open our doors, you'll get the call. Book your first appointment. The race to 10 starts the day we open.</p>
+        <p class="step-desc">Booking is open and appointments begin July 26. Book your first appointment now. The race to 10 is on.</p>
       </div>
       <div class="step fade-up">
         <p class="step-num">03</p>
@@ -671,7 +672,7 @@
       <p class="section-eyebrow">Ready to Begin</p>
       <h2 class="section-title">Already on our list?<br><em>This one's different.</em></h2>
     </div>
-    <p class="cta-sub">The Founder Special is a separate offer. Grab it here. Free, no payment required. The first 10 people to schedule and complete their appointment when we open win the founding rate for a full year.</p>
+    <p class="cta-sub">The Founder Special is a separate offer. Grab it here. Free, no payment required. Doors are open, and the first 10 people to schedule and complete their appointment win the founding rate for a full year.</p>
 
     <div id="founder-form">
       <script src="https://www.refineryaestheticswi.com/forms/2149549938/embed.js"></script>

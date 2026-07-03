@@ -298,7 +298,7 @@
 
   <div class="page">
 
-    <a href="https://www.refineryaestheticswi.com" class="logo">
+    <a href="https://www.refineryaestheticswi.com" class="logo" target="_top">
       <span class="logo-word">Refinery</span>
       <div class="logo-rule"></div>
       <span class="logo-sub">Aesthetics</span>
@@ -316,17 +316,17 @@
     <p class="subhead">Your spot is reserved.</p>
     <div class="rule"></div>
 
-    <p class="body-copy">We've tagged you for the Founder Special waitlist. When we open in May 2026, the first 10 people to schedule and complete their appointment lock in the founding rate for a full year. We'll reach out the moment our doors open.</p>
+    <p class="body-copy">We've tagged you for the Founder Special. Our doors are open. The first 10 people to schedule and complete their appointment lock in the founding rate for a full year. Appointments begin July 26 and are filling quickly. Book now to claim your spot.</p>
 
     <!-- Whitelist nudge -->
     <div style="max-width:400px;margin:0 auto 40px;padding:20px 28px;border:1px solid rgba(200,169,110,0.2);text-align:center;">
       <p style="font-size:9.5px;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:#c8a96e;margin-bottom:12px;">One quick thing</p>
-      <p style="font-size:13.5px;font-weight:300;line-height:1.85;color:rgba(250,248,244,0.65);margin:0;">Two things to make sure you don't miss your opening day call. First, save <em style="color:#e2cfa5;">info@refineryaestheticswi.com</em> to your contacts. Second, if our first email lands in promotions, drag it to your primary inbox and select <em style="color:#e2cfa5;">"Do this for all future messages."</em> Takes 30 seconds and keeps you at the front of the line.</p>
+      <p style="font-size:13.5px;font-weight:300;line-height:1.85;color:rgba(250,248,244,0.65);margin:0;">Two things to make sure you don't miss our emails. First, save <em style="color:#e2cfa5;">info@refineryaestheticswi.com</em> to your contacts. Second, if our first email lands in promotions, drag it to your primary inbox and select <em style="color:#e2cfa5;">"Do this for all future messages."</em> Takes 30 seconds and keeps you at the front of the line.</p>
     </div>
 
     <div class="links">
-      <a href="https://www.refineryaestheticswi.com" class="btn-gold">Explore Our Site</a>
-      <a href="https://www.refineryaestheticswi.com/services" class="btn-outline">Our Services</a>
+      <a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" class="btn-gold" target="_top">Book Your Appointment</a>
+      <a href="https://www.refineryaestheticswi.com/services" class="btn-outline" target="_top">Our Services</a>
     </div>
 
     <p class="social-label">Follow along</p>

@@ -550,18 +550,18 @@
 
   <!-- ═══ NAVIGATION ══════════════════════════════════════════════ -->
   <nav class="site-nav">
-    <a href="https://www.refineryaestheticswi.com" class="nav-logo">
+    <a href="https://www.refineryaestheticswi.com" class="nav-logo" target="_top">
       <span class="nav-logo-word">Refinery</span>
       <div class="nav-logo-rule"></div>
       <span class="nav-logo-sub">Aesthetics</span>
     </a>
     <ul class="nav-links">
-      <li><a href="https://www.refineryaestheticswi.com" class="active">Home</a></li>
-      <li><a href="https://www.refineryaestheticswi.com/services">Services</a></li>
-      <li><a href="https://www.refineryaestheticswi.com/our-team">Our Team</a></li>
-      <li><a href="https://www.refineryaestheticswi.com/contact">Contact</a></li>
+      <li><a href="https://www.refineryaestheticswi.com" class="active" target="_top">Home</a></li>
+      <li><a href="https://www.refineryaestheticswi.com/services" target="_top">Services</a></li>
+      <li><a href="https://www.refineryaestheticswi.com/our-team" target="_top">Our Team</a></li>
+      <li><a href="https://www.refineryaestheticswi.com/contact" target="_top">Contact</a></li>
     </ul>
-    <a href="https://www.refineryaestheticswi.com/booking" class="nav-book">Book Now</a>
+    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" class="nav-book" target="_top">Book Now</a>
     <button class="nav-burger" onclick="document.getElementById('nav-mobile').classList.add('open')">
       <span></span><span></span><span></span>
     </button>
@@ -570,11 +570,11 @@
   <!-- Mobile Menu -->
   <div class="nav-mobile" id="nav-mobile">
     <button class="nav-mobile-close" onclick="document.getElementById('nav-mobile').classList.remove('open')">&times;</button>
-    <a href="https://www.refineryaestheticswi.com">Home</a>
-    <a href="https://www.refineryaestheticswi.com/services">Services</a>
-    <a href="https://www.refineryaestheticswi.com/our-team">Our Team</a>
-    <a href="https://www.refineryaestheticswi.com/contact">Contact</a>
-    <a href="https://www.refineryaestheticswi.com/booking" class="nav-book-mobile">Book Now</a>
+    <a href="https://www.refineryaestheticswi.com" target="_top">Home</a>
+    <a href="https://www.refineryaestheticswi.com/services" target="_top">Services</a>
+    <a href="https://www.refineryaestheticswi.com/our-team" target="_top">Our Team</a>
+    <a href="https://www.refineryaestheticswi.com/contact" target="_top">Contact</a>
+    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" class="nav-book-mobile" target="_top">Book Now</a>
   </div>
 
   <!-- ═══ HERO ═══════════════════════════════════════════════════ -->
@@ -586,8 +586,8 @@
     </div>
     <h1>Where <em>precision</em><br>meets artistry</h1>
     <div class="hero-rule"></div>
-    <p class="hero-sub">Elevated aesthetic treatments tailored to you — natural results, refined technique, unhurried care.</p>
-    <a href="https://www.refineryaestheticswi.com/booking" class="btn-primary">Book a Consultation</a>
+    <p class="hero-sub">Elevated aesthetic treatments tailored to you: natural results, refined technique, unhurried care.</p>
+    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" class="btn-primary" target="_top">Book a Consultation</a>
   </section>
 
   <!-- ═══ IMAGE SPLIT ═════════════════════════════════════════════ -->
@@ -681,8 +681,8 @@
       <p class="section-eyebrow">Ready to Begin</p>
       <h2 class="section-title">Your most <em>refined</em> self<br>starts with one visit</h2>
     </div>
-    <p class="cta-sub">We keep our schedule intentionally small so every client receives our full attention. Reserve your spot today.</p>
-    <a href="https://www.refineryaestheticswi.com/booking" class="btn-dark">Reserve Your Consultation</a>
+    <p class="cta-sub">We keep our schedule intentionally small so every client receives our full attention. Appointments begin July 26 and are filling quickly, so reserve your spot today.</p>
+    <a href="https://www.refineryaestheticswi.com/refinery-aesthetics-booking" class="btn-dark" target="_top">Reserve Your Consultation</a>
   </section>
 
   <!-- ═══ FOOTER STRIPE ════════════════════════════════════════════ -->
